@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="${title}">Title</title>
+</head>
+<body>
+    <h1 th:text="${title}">
+        Signup
+    </h1>
+    <p th:unless="${list} and ${list.size()}">
+        No users
+    </p>
+    <a href="/signup/add">Add user</a>
+    <ul>
+        <li th:each="item : ${list}" th:text="${item}"></li>
+    </ul>
+</body>
+</html>
