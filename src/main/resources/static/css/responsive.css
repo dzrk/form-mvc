@@ -1,0 +1,609 @@
+@media (min-width: 320px) {}
+@media (min-width: 150px) and (max-width: 419px) {
+    .navbar-brand {
+        padding: 0;
+        margin-left: -15px;
+    }
+    .navbar-brand img {
+        width: 187px;
+        margin: -2px 0;
+    }
+    .navbar-toogle img,
+    .shopping-cart img {
+        width: 36px;
+    }
+    .navbar-toogle,
+    .shopping-cart {
+        margin: 8px -8px
+    }
+    .navbar-fixed-bottom .btn {
+        font-size: 16px;
+        padding: 21px 9px;
+    }
+    .select-sushi .navbar-fixed-bottom .btn {
+        font-size: 18px;
+    }
+    .grey-input input {
+        padding: 0 10px;
+    }
+    .input-group .btn {
+        width: 31px;
+        padding: 0 5px !important;
+        height: 31px;
+        line-height: 35px;
+    }
+    .mac-os .input-group .btn {
+        padding: 0 6px !important;
+        line-height: 40px !important;
+    }
+   .path-selectplatter .btn, .path-product .btn{
+        font-size:14px !important;
+        padding:7px 10px !important;
+    }
+    .input-number {
+        font-size:14px !important;
+    }
+    .navbar-fixed-bottom .btn {
+        font-size:14px !important;
+    }
+    .navbar-fixed-bottom .btn {
+        padding:21px 9px !important;
+    }
+    .path-selectplatter .product-box .col-md-3.col-sm-3.col-xs-3{
+        padding-left:0;
+    }
+	body.path-node.node-id-25 a.btn.btn-default.fixed-width-2{
+		max-width: 300px
+	}
+	.btn {
+		letter-spacing: 0 !important;
+	}
+	
+	.path-product .single .btn {
+		max-width: 289px !important;
+	}	
+	.sushi-img-decrease img {
+		max-width: 136px !important;
+	}
+}
+@media (min-width: 420px) and (max-width: 530px) {
+    .navbar-brand img {
+        width: 210px;
+        margin: -6px 0;
+    }
+    .navbar-brand {
+        padding: 0;
+        margin-left: -15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .wrapper {
+        /*padding: 136px 15px 50px 15px*/
+		padding: 136px 15px 70px 15px
+    }
+    .product-desc .btn {
+        font-size: 11px;
+    }
+    .fixed-width {
+        width: 133px;
+        max-width: 190px;
+    }
+    .nutritional-list {
+        width:100%;
+        padding: 0;
+        max-width: 270px;
+    }
+   .nutritional-list  .display-inline {
+    display: inline-block;
+    float: none;
+    margin-left: -7px;
+    width: 50%;
+}
+}
+@media (min-width: 501px) and (max-width: 767px) {} 
+@media (max-width: 767px) {
+    .our-obsession-btn {
+        white-space: normal;
+        height: auto;
+    }
+    .obsession-padding:nth-of-type(2n+1) {
+        padding-right:  15px;
+    }
+       .obsession-padding:nth-of-type(2n+2) {
+        padding-left: 15px;
+    }
+    .single-obsession-video .video-icon {
+        width: 60px
+    }
+    .fixed-full-window .modal-dialog {
+        max-height: 250px;
+    }
+  
+    .form-buttons {
+        margin-top: 12px;
+        padding: 0 10px;
+    }
+    .fixed-full-window .modal-close-icon {
+        top: -42px;
+        right: 0;
+    }
+    .fixed-full-window .modal-dialog {
+        padding: 50px 15px;
+    }
+    .fixed-form {
+        position: fixed;
+        top: 100px;
+        z-index: 99999;
+        width: 100%;
+        left: 0
+    }
+   /* .content-heading  {
+        position: relative;
+        padding-left: 15px;
+    }*/
+    .path-taxonomy .content-heading, .path-taxonomy-blog .content-heading {
+        position: relative;
+        padding-left: 15px;
+    }
+    .modal:before {
+        display: initial
+    }
+    .loader-img-bg-2 {
+        background-size: 417%;
+        background-position: 16% 63%;
+    }
+    .obsession-bg-afternoon {
+        background-position: 51% 48%;
+    }
+    .obsession-bg-lunchtime {
+        background-position: center 25%;
+    }
+    .sushi-master p {
+        margin-bottom: 20px;
+    }
+    .sushi-master .btn {
+        margin-top: 30px;
+    }
+    .sushi-master label {
+        margin-bottom: 15px;
+    }
+    .checkout .wrapper,
+    .checkout-confirmation .wrapper {
+        padding: 120px 15px 50px 15px
+    }
+    .thank-you .loader-img-bg-2 a {
+        width: 250px;
+        font-size: 18px !important;
+        letter-spacing: 4px;
+    }
+    .wrapper.select-sushi {
+        padding: 160px 15px 100px 15px !important;
+    }
+    .add-order {
+        padding: 135px 15px !important;
+    }
+    .add-order .fixed-width {
+        width: 100%;
+        max-width: 100%;
+    }
+    .fixed-width {
+        width: 100%;
+        max-width: 100%;
+    }
+    .wrapper.select-sushi .content-heading {
+        margin-top: 30px;
+    }
+    .input-group .btn {
+        font-size: 40px !important
+    }
+    .wrapper.select-sushi .product-box {
+        padding-bottom: 0
+    }
+    .wrapper.select-sushi .navbar-fixed-bottom.red .btn i {
+        margin-left: 10px;
+    }
+    .single-item .navbar-fixed-bottom .col-md-8.col-sm-8.col-xs-8.text-right .btn,
+    .single-item .navbar-fixed-bottom .col-md-4.col-sm-4.col-xs-4.text-left .btn {
+        width: 100%;
+    }
+    .single .btn {
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+    }
+    .customer-profile .btn {
+        font-size: 18px !important;
+        letter-spacing: 2px !important;
+    }
+    .customer-profile .light {
+        margin-bottom: 20px;
+    }
+    .customer-profile .light:nth-child(2n+2) {
+        margin-bottom: 10px;
+    }
+    .customer-profile .form-buttons .col-md-12.col-sm-12.col-xs-12:nth-of-type(2n+2) button {
+        margin: 0;
+    }
+    .overlay-content {
+        text-align: left;
+        max-width: 100%;
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+    .overlay a {
+        padding: 15px 29px;
+    }
+    p {
+        margin: 0 0 10px;
+        font-weight: 300;
+    }
+    .re-menu .product-box .product-img img {
+        max-width: 280px;
+    }
+    .customer-profile .form-buttons {
+        margin-top: 0;
+    }
+    .customer-profile .btn {
+        max-width: 100%;
+        width: 100%;
+    }
+    .customer-profile .form-buttons .col-md-12 {
+        padding: 0
+    }
+    .navbar-nav {
+        width: 100%;
+        margin: 0;
+    }
+    .height-25 {
+        margin: 25px auto;
+    }
+    .mobile-margin-bottom {
+        margin-bottom: 20px;
+    }
+    .mobile-padding-right {
+        padding-right: 6px;
+    }
+    .mobile-padding-left {
+        padding-left: 6px;
+    }
+    .visible-xs-block {
+        display: none !important
+    }
+    .pickup h3.content-heading {
+        margin-top: 10px !important;
+        margin-bottom: 25px;
+    }
+    .pickup .result p:first-child {
+        margin-bottom: 30px;
+    }
+    .pickup .form-buttons {
+        margin: 0
+    }
+    .pickup .fixed-width {
+        max-width: 100%;
+        width: 100%;
+    }
+    .select-items .border-top {
+        display: none;
+    }
+    .select-items .product-box {
+        padding: 0 0 20px 0;
+    }
+    .navbar-collapse {
+        margin: 0 !important;
+        padding: 0;
+        width: 100%;
+        float: left;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        padding-left: 0;
+    }
+    .navbar-toggle {
+        margin-top: 30px;
+        border: none;
+        padding: 0
+    }
+    .list-view {
+        margin: 0 -15px;
+    }
+    .sitemap {
+        margin: 0 !important
+    }
+    .list-view li:after {
+        right: 18px;
+    }
+    .navbar-fixed-bottom .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+    /*.btn { letter-spacing: 0 }*/
+    
+    .loader {
+        padding: 0 15px;
+    }
+    .mobile-change {
+        position: inherit;
+        margin: 22px 0 0 0
+    }
+    /**/
+    
+    .background-margin .mobile-wrapper {
+        margin: 0;
+    }
+    .background-margin .wrapper {
+        padding: 67px 0 0 0;
+    }
+    .obsession-bg {
+        background: url(../images/parallax-bg-3.jpg) 43% no-repeat;
+        background-size: 500% !important;
+        background-position: center 100%;
+    }
+    .background-margin .background-img {
+        padding: 0 15px;
+    }
+    .inner-font-size {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .late-morning .margin-top-extra.mobile-change {
+        margin-top: 128px;
+    }
+    .social-media {
+        margin-top: 19px;
+    }
+    .background-margin .btn {
+        letter-spacing: 2px;
+        font-size: 19px !important
+    }
+    .half-banner .mobile-wrapper {
+        margin: 27px 0 0 0
+    }
+    .half-banner {
+        height: auto
+    }
+    .re-menu .product-box {
+        margin: 0;
+    }
+    .re-menu .product-box .product-img img {
+        margin-bottom: 0
+    }
+    .back-menu {
+        margin: 15px 0;
+        position: absolute;
+        top: 94px;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+    .product-box.single-menu-item {
+        padding-bottom: 30px;
+    }
+    .location-details a.btn {
+        width: 100%;
+        max-width: 100%;
+        letter-spacing: 2px;
+        font-size: 19px !important;
+    }
+    .location-details li h4 span.shop-address,
+    .location-details li h4 span.shop-phone,
+    .location-details li h4 span.shop-fax,
+    .list-view.blog li h4 span.shop-content {
+        line-height: normal
+    }
+    .blog-pending {
+        padding: 0;
+    }
+    /**/
+    
+    .mobile-wrapper {
+        padding: 0;
+        margin: 100px 0 0 0
+    }
+    .half-banner .big-max-width {
+        padding: 0 15px;
+    }
+    .half-banner {
+        background: #000 !important
+    }
+    .extra-wrapper-pending {
+        padding-top: 0
+    }
+    .list-view.blog li h4 span.shop-content {
+        display: none;
+    }
+    .list-view.blog li a.readmoreblog {
+        display: none
+    }
+    .mobile-black {
+        background: #fff !important;
+    }
+    .mobile-black .mobile-wrapper .content-heading {
+        color: #000
+    }
+    .mobile-wrapper .line-separator {
+        margin: 30px auto 30px auto
+    }
+    .mobile-wrapper .content-heading {
+        font-size: 24px;
+    }
+    .radio-margin .display-block {
+        display: block;
+        margin: 0 !important
+    }
+    .mobiel-padding {
+        padding-top: 0
+    }
+    .mobiel-padding .blog-pending {
+        padding: 0;
+    }
+    .mobile-full-width {
+        width: 100%;
+        max-width: 100%;
+    }
+    .select-platter-size .fixed-width {
+        width: 100%;
+        max-width: 100%;
+    }
+    .select-platter-size .form-buttons {
+        margin-top: 10px;
+    }
+    .select-items .product-desc .btn {
+        width: 100%;
+    }
+    .single-item .navbar-fixed-bottom .col-md-8.col-sm-8.col-xs-8.text-right {
+        width: 66.66666667% !important
+    }
+    .single-item .navbar-fixed-bottom .col-md-4.col-sm-4.col-xs-4.text-left {
+        width: 33.33333333% !important
+    }
+    .select-sushi .product-box {
+        border: none;
+    }
+    /* new */
+
+    .franchisee-page-top ol {
+        text-align: center !important;
+        margin-top: 50px;
+    }
+    .franchisee-bg .img {
+        height: auto;
+    }
+    .franchisee-bg .img img {
+        position: initial;
+    }
+    
+    .search-form.menu-page .col-md-8 {
+        margin-top: 0 !important;
+    } 
+    
+   .single .product-img img {
+        height: auto;
+   }
+   .ingredients-button-link {
+        white-space: normal;
+        height: auto !important;
+   }
+   .nutritional-list {
+    padding: 0 7px;
+   }
+   .nutritional-list li:nth-of-type(5n+5) {
+    margin-right: 4px;
+   }
+   
+   .custom-payment-page {
+    padding: 120px 15px 50px 15px;
+}
+
+.responsive-viewport-height {
+    height: auto;
+    text-align: center;
+}
+
+.bottom-fixed{
+    position: initial;
+    margin: 0 auto;
+    display: inline-block;
+    margin: 34px auto;
+}
+}
+
+@media (min-width: 768px) {
+    .franchisee-page-top .order-list {
+        list-style-type: none !important;
+    }
+    .franchisee-page-top .order-list li {
+        list-style-type: none !important;
+        counter-increment: step-counter;
+        padding-left: 20px;
+        position: relative;
+    }
+    .franchisee-page-top .order-list li::before {
+        content: counter(step-counter);
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 3px;
+    }
+    /* new end */
+    
+    a.mobile-breadcrumb {
+        display: none;
+    }
+    .nav > li > a {
+        padding: 30px 15px !important
+    }
+    .navbar-brand {
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 22px;
+    }
+    .border-radius-none span:after {
+        display: none;
+    }
+    .btn i {
+        float: right;
+        font-size: 22px;
+        height: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 16px;
+        color: #fff;
+        position: absolute;
+    }
+    .btn {
+        position: relative;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {} @media (min-width: 992px) and (max-width: 1199px) {} @media (min-width: 1200px) {
+    .overlay-content {
+        overflow: hidden !important
+    }
+}
+@media (min-width: 300px) and (max-width: 429px) {
+    .home a.btn.btn-default.light {
+        max-width:none;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .home a.btn.btn-default.light.btn-last { 
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 300px) and (max-width: 768px) {
+    .select-items  .views-view-grid.horizontal.cols-2.clearfix  .col-md-6.col-sm-6.col-xs-12:nth-last-of-type(1) {
+        margin-bottom: 50px !important;
+    }
+    .select-items .col-md-6.col-sm-6.col-xs-12:nth-last-of-type(1) {
+        margin-bottom: 0px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .obsession-bg {
+        background-size: 185% !important;
+        background-position: -271px 0;
+    }
+    .select-items .col-md-6.col-sm-6.col-xs-12:nth-last-of-type(1) {
+        margin-bottom: 30px !important;
+    }
+    .franchisee-bg .img img {
+        transform: scale(1.4);
+        -webkit-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+    }
+}
+
+.single-menu-item .product-img img {
+    height:auto !important;
+}
+
+body.path-node.node-id-43 h2.content-heading, body.path-pickuplocation h2.content-heading, .path-product h2.content-heading, .path-selectplattersize h2.content-heading{
+	padding-left: 0 !important
+}

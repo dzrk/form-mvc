@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
-<head>
-    <meta charset="UTF-8"/>
-    <title th:text="${title}">Title</title>
-</head>
+<head th:replace="fragments :: head"></head>
+<nav th:replace="fragments :: nav"></nav>
 <body>
     <h1 th:text="${title}">
         Signup
@@ -11,9 +9,10 @@
     <p th:unless="${list} and ${list.size()}">
         No users
     </p>
-    <a href="/signup/add">Add user</a>
+
     <ul>
         <li th:each="item : ${list}" th:text="${item}"></li>
     </ul>
 </body>
+<footer th:replace="fragments :: footer"></footer>
 </html>
