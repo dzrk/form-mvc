@@ -10,7 +10,7 @@
     font-weight: bold;
     font-style: normal;
 }
-	
+
 @font-face {
     font-family: 'Din';
     src: url('../fonts/din/new/DINPro-Medium.eot');
@@ -187,7 +187,7 @@
 	font-weight: 600;
 	src: local('FontFabric IntroLight'), local('FontFabric-IntroLight'), url(../fonts/din/fontfabric-introlight.woff2) format('woff2');
 }
-*/
+
 @font-face {
     font-family:'FontFabric';
     src: url('../fonts/font-fabric/IntroBlackCaps.eot');
@@ -212,3 +212,4 @@
     font-stretch: normal;
     unicode-range: U+0020-00FE;
 }
+*/

@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
-<nav th:replace="fragments :: nav"></nav>
 <body>
-    <h1 th:text="${title}">Signup</h1>
 
-    <form method="post">
-        <p>First name: <input type="text" name="firstName" /></p>
-        <p>Last name: <input type="text"  name="lastName"/></p>
-        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
-    </form>
+<header class="navbar" role="banner">
+    <div class="container navbar">
+        <nav th:replace="fragments :: nav"></nav>
+    </div>
+</header>
+<div class="white-bg background-img menu-bg half-banner">
+    <div class="wrapper mobile-wrapper ">
+        <div class="big-max-width" id="loader">
+            <h2 class="content-heading">
+                <span property="schema:name">Sign Up</span>
+            </h2>
+            <p></p><p>Be the first to hear about our latest products and offers.</p><p></p>
+            <div class="line-separator half"></div>
+        </div>
+    </div>
+</div>
+
 </body>
 <footer th:replace="fragments :: footer"></footer>
 </html>

@@ -3,103 +3,86 @@
 <head th:fragment="head">
     <meta charset="UTF-8"/>
     <title th:text="${title}">Sushi Sushi</title>
-    <link rel="stylesheet" th:href="@{/css/components/ajax-progress.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/align.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/autocomplete-loading.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/fieldgroup.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/container-inline.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/clearfix.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/details.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/hidden.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/item-list.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/js.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/nowrap.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/position-container.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/progress.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/reset-appearance.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/resize.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/sticky-header.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/system-status-counter.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/system-status-report-counters.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/system-status-report-general-info.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/tabledrag.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/tablesort.module.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/components/tree-child.module.css}" media="all">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}" media="all">
     <link rel="stylesheet" th:href="@{/css/font.css}" media="all">
     <link rel="stylesheet" th:href="@{/css/jquery-ui.css}" media="all">
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" media="all">
     <link rel="stylesheet" th:href="@{/css/style.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/drupal-default.css}" media="all">
     <link rel="stylesheet" th:href="@{/css/responsive.css}" media="all">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" th:href="@{/css/drupal-default.css}" media="all">
+
 
 
 </head>
 <body>
 <nav th:fragment="nav">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="col-md-12">
-            <div class="col-md-6 col-sm-6 col-xs-6"> <a class="navbar-brand" href="/">
-                <img th:src="@{/images/sushi-new-logo.png}" alt="logo" title="Shshi Shshi" class="none ie-logo">
-                <img th:src="@{/images/sushi-sushi-logo-2.svg}" alt="logo" title="Sushi Sushi" class="ie-logo-none">
-            </a> </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 text-right">
-                <span class="shopping-cart">
-                    <a href="/cart">
-                        <img th:src="@{/images/cart-icon.png}" alt="" title="Cart">
-                        <span class="cart-item-count" id="counter">0</span>
-                    </a>
-                </span>
-                <span class="navbar-toogle bar">
-                    <img th:src="@{/images/toggle-icon.png}" alt="" title="Open Menu">
-                </span>
-                <span class="navbar-toogle close-nav" style="display:none"></span>
-                <div id="myNav" class="overlay" style="height: 0%;">
-                    <div class="region-content">
-                        <nav role="navigation" aria-labelledby="block-sushi-main-menu-menu" id="block-sushi-main-menu">
-                            <h2 class="visually-hidden" id="block-sushi-main-menu-menu">Main navigation</h2>
-                            <ul>
-                                <li>
-                                    <a href="/pickuplocation" data-drupal-link-system-path="pickuplocation">Order Online</a>
-                                </li>
-                                <li>
-                                    <a href="/menu" data-drupal-link-system-path="node/42">Menu</a>
-                                </li>
-                                <li>
-                                    <a href="/findlocation" data-drupal-link-system-path="findlocation">Find A Location</a>
-                                </li>
-                                <li>
-                                    <a href="/our-obsession" data-drupal-link-system-path="node/27">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="/careers" data-drupal-link-system-path="node/25">Careers</a>
-                                </li>
-                                <li>
-                                    <a href="/sushi-franchisee" data-drupal-link-system-path="node/43">Franchising</a>
-                                </li>
-                                <li>
-                                    <a href="/double-happy" data-drupal-link-system-path="double-happy">Sign Up</a>
-                                </li>
-                                <li>
-                                    <a href="/contact-now" data-drupal-link-system-path="node/55">Contact Us</a>
-                                </li>
-                            </ul>
-                        </nav>
+    <div class=""ie-display-="none">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="col-md-12">
+                <div class="col-md-6 col-sm-6 col-xs-6"> <a class="navbar-brand" href="/">
+                    <img th:src="@{/images/sushi-new-logo.png}" alt="logo" title="Shshi Shshi" class="none ie-logo">
+                    <img th:src="@{/images/sushi-sushi-logo-2.svg}" alt="logo" title="Sushi Sushi" class="ie-logo-none">
+                </a> </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                    <span class="shopping-cart">
+                        <a href="/cart">
+                            <img th:src="@{/images/cart-icon.png}" alt="" title="Cart">
+                            <span class="cart-item-count" id="counter">0</span>
+                        </a>
+                    </span>
+                    <span class="navbar-toogle bar">
+                        <img th:src="@{/images/toggle-icon.png}" alt="" title="Open Menu">
+                    </span>
+                    <span class="navbar-toogle close-nav" style="display:none"></span>
+                    <div id="myNav" class="overlay" style="height: 0%;">
+                        <div class="region-content">
+                            <nav role="navigation" aria-labelledby="block-sushi-main-menu-menu" id="block-sushi-main-menu">
+                                <h2 class="visually-hidden" id="block-sushi-main-menu-menu">Main navigation</h2>
+                                <ul>
+                                    <li>
+                                        <a href="/pickuplocation" data-drupal-link-system-path="pickuplocation">Order Online</a>
+                                    </li>
+                                    <li>
+                                        <a href="/menu" data-drupal-link-system-path="node/42">Menu</a>
+                                    </li>
+                                    <li>
+                                        <a href="/findlocation" data-drupal-link-system-path="findlocation">Find A Location</a>
+                                    </li>
+                                    <li>
+                                        <a href="/our-obsession" data-drupal-link-system-path="node/27">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/careers" data-drupal-link-system-path="node/25">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="/sushi-franchisee" data-drupal-link-system-path="node/43">Franchising</a>
+                                    </li>
+                                    <li>
+                                        <a href="/double-happy" data-drupal-link-system-path="double-happy">Sign Up</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contact-now" data-drupal-link-system-path="node/55">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
+                    <div id="cart-item-count" style="display:none">0</div>
+                    <div id="current-user-status" style="display:none">0</div>
                 </div>
-                <div id="cart-item-count" style="display:none">0</div>
-                <div id="current-user-status" style="display:none">0</div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </nav>
+
 </body>
 <footer th:fragment="footer">
-    <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflQSvpsZ/www-widgetapi.js" async=""></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/js/jquery.validate.js}"></script>
+    <script th:src="@{/js/jquery-ui.min.js}"></script>
 
+    <script th:src="@{/js/additional-methods.js}"></script>
+    <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflQSvpsZ/www-widgetapi.js" async=""></script>
 </footer>
 </html>
