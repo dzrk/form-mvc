@@ -21,26 +21,31 @@
     </div>
     <div class="wrapper extra-wrapper-pending">
         <div class="fix-width-content">
-            <form class = "webform-submission-double-happy-form webform-submission-form js-webform-details-toggle webform-details-toggle" action="/double-happy" method="post" id="webform-submission-double-happy-form" accept-charset="UTF-8">
+            <form class = "webform-submission-double-happy-form webform-submission-form js-webform-details-toggle webform-details-toggle" action="/signup/" method="post" id="webform-submission-double-happy-form" accept-charset="UTF-8">
                 <div class="js-form-item form-item js-form-type-textfield form-item-first-name js-form-item-first-name">
                     <label for="FirstName" class="js-form-required form-required">First name:*</label>
                     <input autocomplete="off" type="text" id="FirstName" name="FirstName" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true">
+                    <span class="error-form">This field is required</span>
                 </div>
                 <div class="js-form-item form-item js-form-type-textfield form-item-last-name js-form-item-last-name">
                     <label for="Surname" class="js-form-required form-required">Last Name:*</label>
                     <input autocomplete="off" type="text" id="Surname" name="Surname" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true">
+                    <span class="error-form">This field is required</span>
                 </div>
                 <div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
                     <label for="EmailAddress" class="js-form-required form-required">Email:*</label>
                     <input autocomplete="off" type="email" id="EmailAddress" name="EmailAddress" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true">
+                    <span class="error-form">A valid email address is required</span>
                 </div>
                 <div class="js-form-item form-item js-form-type-tel form-item-phone-mobile- js-form-item-phone-mobile-">
                     <label for="MobilePhone" class="js-form-required form-required">Phone(Mobile):*</label>
                     <input autocomplete="off"  type="tel" id="MobilePhone" name="MobilePhone" value="" size="30" maxlength="128" class="form-tel required" required="required" aria-required="true">
+                    <span class="error-form">A valid phone number is required</span>
                 </div>
                 <div class="js-form-item form-item js-form-type-tel form-item-postcode- js-form-item-postcode-">
                     <label for="edit-postcode-">Postcode:*</label>
                     <input autocomplete="off" type="tel" id="edit-postcode-" name="Postcode" value="" size="30" maxlength="128" class="form-tel">
+                    <span class="error-form">This field is required</span>
                 </div>
                 <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
                     <input class="webform-button--submit button button--primary js-form-submit form-submit" type="submit" id="edit-submit" name="Submit" value="Submit">

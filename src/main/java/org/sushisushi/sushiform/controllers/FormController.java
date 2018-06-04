@@ -1,9 +1,10 @@
 package org.sushisushi.sushiform.controllers;
 
-import org.apache.catalina.servlet4preview.http.HttpServletRequest;
+import org.json.JSONException;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.ModelAndView;
 import org.sushisushi.sushiform.ApiService;
 import org.sushisushi.sushiform.models.User;
 
@@ -15,16 +16,15 @@ import java.io.IOException;
 public class FormController {
 
     @RequestMapping(value="")
-    public String index() throws IOException {
-        System.out.println(ApiService.getApiKey());
+    public String index() throws IOException, JSONException {
+        System.out.println(ApiService.getApiData("Authorisation?").getString("ApiKey"));
         return "form/index"; //html file name
     }
 
-    @RequestMapping(value="/", method= RequestMethod.POST)
-    @ResponseBody
-    public User newCustomer(@RequestBody User user){ //request param must match html
-
-       return new User("NEW123", "NEW SMITH");
+    @RequestMapping(value="", method= RequestMethod.POST)
+    public ModelAndView method(WebRequest request){ //request param must match html
+        System.out.println(request.getParameter("FirstName"));
+        return new ModelAndView("Redirect:" + "http://sushi.dstgroup.com.au/");
     }
 
 }

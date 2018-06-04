@@ -248,12 +248,16 @@ button {
 	color: #fff;
 	border-radius: 50%;
 }
+/*
 .fix-width-content {
 	margin: 0 auto;
 	max-width: 685px;
-	text-align: center;
+	text-align: left;
 }
-
+*/
+.error-form {
+    display: none;
+}
 .wrapper {
 	float: left;
 	width: 100%;
@@ -850,6 +854,7 @@ to { transform: rotate(360deg); }
 	width: 190px;
 	max-width: 190px;
 }
+
 .fixed-width-2 {
 	width: 100%;
 	max-width: 400px;
@@ -1297,8 +1302,8 @@ table > tbody > tr> td:last-child { text-align: right }
 	
 }
 .mac-os .grey .btn {
-	padding-top:20px;Â  Â Â Â Â Â 
-	padding-bottom:20px;	Â Â Â Â Â Â 
+	padding-top:20px;
+	padding-bottom:20px;
 }
 .mac-os .price {
 	line-height: 103px;
