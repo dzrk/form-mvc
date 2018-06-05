@@ -1,13 +1,11 @@
 package org.sushisushi.sushiform;
 
 import okhttp3.*;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+
 
 public class ApiService{
     public static final MediaType JSON
@@ -27,8 +25,8 @@ public class ApiService{
         }
 
         Request request = new Request.Builder()
-        .url(url)
-        .build();
+                .url(url)
+                .build();
         Response response = null;
         try {
             response = client.newCall(request).execute();
@@ -39,25 +37,22 @@ public class ApiService{
         return new JSONObject(jsonData);
     }
 
-    public String postToApi(String route, HashMap<String,String> formParams) throws IOException {
+    public static String postToApi(String route, JSONObject payload) throws IOException, JSONException {
 
         OkHttpClient client = new OkHttpClient();
-
-        MultipartBody.Builder newBuilder = new MultipartBody.Builder()
-                .setType(MultipartBody.FORM);
-
-        for (Map.Entry<String, String> entry : formParams.entrySet()) {
-            newBuilder.addFormDataPart(entry.getKey(), entry.getValue());
-        }
-
-        MultipartBody requestBody = newBuilder.build();
-
+        String json = payload.toString();
+        String url = BASE_URL + route;
+        RequestBody body = RequestBody.create(JSON, json);
+        System.out.println(payload.toString());
         Request request = new Request.Builder()
-                .url(BASE_URL + route)
-                .post(requestBody)
+                .url(url)
+                .header("ApiKey",ApiService.getApiData("Authorisation?").getString("ApiKey"))
+                .post(body)
                 .build();
         Response response = client.newCall(request).execute();
+        System.out.println(response.body().string());
         return response.body().string();
+
     }
 
 }

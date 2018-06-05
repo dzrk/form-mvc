@@ -248,16 +248,13 @@ button {
 	color: #fff;
 	border-radius: 50%;
 }
-/*
+
 .fix-width-content {
 	margin: 0 auto;
 	max-width: 685px;
-	text-align: left;
+	text-align: center;
 }
-*/
-.error-form {
-    display: none;
-}
+
 .wrapper {
 	float: left;
 	width: 100%;
@@ -1163,7 +1160,7 @@ table > tbody > tr> td:last-child { text-align: right }
 .product-box.single-menu-item { padding-bottom: 58px; }
 .navbar-brand img {
 	width: 274px;
-	margin: -10px -27px;
+	margin: -10px -12px;
 }
 /*.navbar-inverse .navbar-brand { padding: 0 }*/
 /*Gaurav*/
@@ -1209,7 +1206,7 @@ table > tbody > tr> td:last-child { text-align: right }
 .half-banner {
 	height: 300px;
 	overflow: hidden;
-	margin: 100px 0 0 0;
+	margin: 0 0 0 0;
 	display: flex;
 	align-items: center;
 }
@@ -2753,6 +2750,9 @@ div.block-six .single-obsession-video:nth-last-child(1){
 
 .node-preview-form-select {
 	display: none;
+}
+.contact-success-message {
+    display:none;
 }
 /*
 .derrick-form{

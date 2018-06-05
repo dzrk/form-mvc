@@ -7,14 +7,17 @@ public class User {
     private int postcode;
     private String phoneNumber;
 
-    public User()
-    {
+    public User(String firstName, String lastName, String email, int postcode, String phoneNumber) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.postcode = postcode;
+        this.phoneNumber = phoneNumber;
     }
 
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
@@ -22,7 +25,6 @@ public class User {
     public int getPostcode() {
         return postcode;
     }
-
     public void setPostcode(int postcode) {
         this.postcode = postcode;
     }
@@ -30,16 +32,10 @@ public class User {
     public String getPhoneNumber() {
         return phoneNumber;
     }
-
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public User(String firstName, String lastName)
-    {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
     public String getFirstName()
     {
         return firstName;
@@ -48,6 +44,7 @@ public class User {
     {
         this.firstName = firstName;
     }
+
     public String getLastName()
     {
         return lastName;
