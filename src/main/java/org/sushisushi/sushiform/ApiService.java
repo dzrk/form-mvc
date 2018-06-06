@@ -50,7 +50,6 @@ public class ApiService{
                 .post(body)
                 .build();
         Response response = client.newCall(request).execute();
-        System.out.println(response.body().string());
         return response.body().string();
 
     }

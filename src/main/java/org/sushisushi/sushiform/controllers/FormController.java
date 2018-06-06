@@ -35,10 +35,10 @@ public class FormController {
         payload.put("MobilePhone",request.getParameter("MobilePhone"));
 
         JSONObject Jclassification = new JSONObject();
-        Jclassification.put("Id","0");
-        payload.put("Classifications", Jclassification);
+        Jclassification.put("Id",2);
+        classification.put(Jclassification);
+        payload.put("Classifications", classification);
         //payload.put("Postcode",request.getParameter("PostCode"));
-
         ApiService.postToApi("Member", payload);
         return "form/index";
     }

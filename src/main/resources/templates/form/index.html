@@ -8,59 +8,59 @@
         </div>
     </header>
     <main role="main">
-    <div class="layout-content 23">
-    <div class ="region-content">
-    <div id = "block-sushi-content">
-        <div class="white-bg background-img menu-bg half-banner"
-             th:style="'background: url(' + @{/images/signup-hero.jpg} + ') top no-repeat;background-position: 0 62%;'">
-            <div class="wrapper mobile-wrapper ">
-                <div class="big-max-width" id="loader">
-                    <h2 class="content-heading">
-                        <span property="schema:name">Sign Up</span>
-                    </h2>
-                    <p></p><p>Be the first to hear about our latest products and offers.</p><p></p>
-                    <div class="line-separator half"></div>
-                </div>
-            </div>
-        </div>
+        <div class="layout-content 23">
+            <div class ="region-content">
+                <div id = "block-sushi-content">
+                    <div class="white-bg background-img menu-bg half-banner"
+                         th:style="'background: url(' + @{/images/signup-hero.jpg} + ') top no-repeat;background-position: 0 62%;'">
+                        <div class="wrapper mobile-wrapper ">
+                            <div class="big-max-width" id="loader">
+                                <h2 class="content-heading">
+                                    <span property="schema:name">Sign Up</span>
+                                </h2>
+                                <p></p><p>Be the first to hear about our latest products and offers.</p><p></p>
+                                <div class="line-separator half"></div>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="wrapper extra-wrapper-pending">
-        <div class="fix-width-content">
-            <div class="contact-success-message">
-                <div class="alert alert-success">
-                    <p><strong>Thank you! You have successfully signed up to the newsletter!</strong></p>
+                    <div class="wrapper extra-wrapper-pending">
+                        <div class="fix-width-content">
+                            <div class="contact-success-message">
+                                <div class="alert alert-success">
+                                    <p><strong>Thank you! You have successfully signed up to the newsletter!</strong></p>
+                                </div>
+                            </div>
+                            <form class = "webform-submission-double-happy-form webform-submission-form js-webform-details-toggle webform-details-toggle" action="/signup" method="post" id="webform-submission-double-happy-form" accept-charset="UTF-8">
+                                <div class="js-form-item form-item js-form-type-textfield form-item-first-name js-form-item-first-name">
+                                    <label for="FirstName" class="js-form-required form-required">First name:*</label>
+                                    <input autocomplete="off" type="text" id="FirstName" name="FirstName" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true">
+                                </div>
+                                <div class="js-form-item form-item js-form-type-textfield form-item-last-name js-form-item-last-name">
+                                    <label for="Surname" class="js-form-required form-required">Last Name:*</label>
+                                    <input autocomplete="off" type="text" id="Surname" name="Surname" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true">
+                                </div>
+                                <div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
+                                    <label for="EmailAddress" class="js-form-required form-required">Email:*</label>
+                                    <input autocomplete="off" type="email" id="EmailAddress" name="EmailAddress" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true">
+                                </div>
+                                <div class="js-form-item form-item js-form-type-tel form-item-phone-mobile- js-form-item-phone-mobile-">
+                                    <label for="MobilePhone" class="js-form-required form-required">Phone(Mobile):*</label>
+                                    <input autocomplete="off"  type="tel" id="MobilePhone" name="MobilePhone" value="" size="30" maxlength="128" class="form-tel required" required="required" aria-required="true">
+                                </div>
+                                <div class="js-form-item form-item js-form-type-tel form-item-postcode- js-form-item-postcode-">
+                                    <label for="edit-postcode-">Postcode:*</label>
+                                    <input autocomplete="off" type="tel" id="edit-postcode-" name="Postcode" value="" size="30" maxlength="128" class="form-tel">
+                                </div>
+                                <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                                    <input class="webform-button--submit button button--primary js-form-submit form-submit" type="submit" id="edit-submit" name="Submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <form class = "webform-submission-double-happy-form webform-submission-form js-webform-details-toggle webform-details-toggle" action="/signup" method="post" id="webform-submission-double-happy-form" accept-charset="UTF-8">
-                <div class="js-form-item form-item js-form-type-textfield form-item-first-name js-form-item-first-name">
-                    <label for="FirstName" class="js-form-required form-required">First name:*</label>
-                    <input autocomplete="off" type="text" id="FirstName" name="FirstName" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true">
-                </div>
-                <div class="js-form-item form-item js-form-type-textfield form-item-last-name js-form-item-last-name">
-                    <label for="Surname" class="js-form-required form-required">Last Name:*</label>
-                    <input autocomplete="off" type="text" id="Surname" name="Surname" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true">
-                </div>
-                <div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
-                    <label for="EmailAddress" class="js-form-required form-required">Email:*</label>
-                    <input autocomplete="off" type="email" id="EmailAddress" name="EmailAddress" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true">
-                </div>
-                <div class="js-form-item form-item js-form-type-tel form-item-phone-mobile- js-form-item-phone-mobile-">
-                    <label for="MobilePhone" class="js-form-required form-required">Phone(Mobile):*</label>
-                    <input autocomplete="off"  type="tel" id="MobilePhone" name="MobilePhone" value="" size="30" maxlength="128" class="form-tel required" required="required" aria-required="true">
-                </div>
-                <div class="js-form-item form-item js-form-type-tel form-item-postcode- js-form-item-postcode-">
-                    <label for="edit-postcode-">Postcode:*</label>
-                    <input autocomplete="off" type="tel" id="edit-postcode-" name="Postcode" value="" size="30" maxlength="128" class="form-tel">
-                </div>
-                <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
-                    <input class="webform-button--submit button button--primary js-form-submit form-submit" type="submit" id="edit-submit" name="Submit" value="Submit">
-                </div>
-            </form>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </main>
 </body>
 <footer th:replace="fragments :: footer"></footer>
