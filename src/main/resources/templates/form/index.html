@@ -52,6 +52,10 @@
                                     <label for="Postcode">Postcode:*</label>
                                     <input autocomplete="off" type="tel" id="Postcode" name="Postcode" value="" size="30" maxlength="128" class="form-tel">
                                 </div>
+                                <div class="g-recaptcha col-sm-5"
+                                     th:attr="data-sitekey=${@captchaSettings.getSite()}"></div>
+                                <span id="captchaError" class="alert alert-danger col-sm-4"
+                                      style="display:none"></span>
                                 <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
                                     <input class="webform-button--submit button button--primary js-form-submit form-submit" type="submit" id="edit-submit" name="Submit" value="Submit">
                                 </div>

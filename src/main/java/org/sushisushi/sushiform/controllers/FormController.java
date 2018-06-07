@@ -7,17 +7,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.servlet.ModelAndView;
 import org.sushisushi.sushiform.ApiService;
-import org.sushisushi.sushiform.models.User;
+import org.sushisushi.sushiform.reCaptcha.CaptchaService;
 
 import java.io.IOException;
-import java.util.HashMap;
 
 
 @Controller
 @RequestMapping("signup")
 public class FormController {
+
     @RequestMapping(value="", method= RequestMethod.GET)
     public String index(Model model) throws IOException, JSONException {
         //System.out.println(ApiService.getApiData("Authorisation?").getString("ApiKey"));
@@ -25,8 +24,10 @@ public class FormController {
     }
 
     @RequestMapping(value="", method= RequestMethod.POST)
-    public String method(WebRequest request, Model model) throws IOException, JSONException { //request param must match html
+    public String processResponse(WebRequest request, Model model) throws IOException, JSONException { //request param must match html
 
+        String response = request.getParameter("g-recaptcha-response");
+        CaptchaService.processResponse(response,model);
         JSONObject payload = new JSONObject();
         JSONArray jArray = new JSONArray();
         payload.put("FirstName",request.getParameter("FirstName"));
@@ -46,5 +47,6 @@ public class FormController {
         model.addAttribute("resCode",ApiService.postToApi("Member", payload));
         return "form/index";
     }
+
 
 }
