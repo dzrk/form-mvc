@@ -37,7 +37,7 @@ public class ApiService{
         return new JSONObject(jsonData);
     }
 
-    public static String postToApi(String route, JSONObject payload) throws IOException, JSONException {
+    public static int postToApi(String route, JSONObject payload) throws IOException, JSONException {
 
         OkHttpClient client = new OkHttpClient();
         String json = payload.toString();
@@ -50,7 +50,7 @@ public class ApiService{
                 .post(body)
                 .build();
         Response response = client.newCall(request).execute();
-        return response.body().string();
+        return response.code();
 
     }
 

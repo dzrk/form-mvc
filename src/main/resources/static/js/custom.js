@@ -26,7 +26,4 @@ jQuery(document).ready(function($) {
         CloseMenuBar();
         jQuery(this).removeClass('close-nav');
     });
-//    $('#webform-submission-double-happy-form').submit(function(event){
-//        $('.contact-success-message').css('display','inline');
-//    });
 });

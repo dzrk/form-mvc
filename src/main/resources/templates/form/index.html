@@ -26,7 +26,7 @@
 
                     <div class="wrapper extra-wrapper-pending">
                         <div class="fix-width-content">
-                            <div class="contact-success-message">
+                            <div th:style="${resCode}==201 ? 'display:inline' : 'display:none'" class="contact-success-message">
                                 <div class="alert alert-success">
                                     <p><strong>Thank you! You have successfully signed up to the newsletter!</strong></p>
                                 </div>
@@ -49,8 +49,8 @@
                                     <input autocomplete="off"  type="tel" id="MobilePhone" name="MobilePhone" value="" size="30" maxlength="128" class="form-tel required" required="required" aria-required="true">
                                 </div>
                                 <div class="js-form-item form-item js-form-type-tel form-item-postcode- js-form-item-postcode-">
-                                    <label for="edit-postcode-">Postcode:*</label>
-                                    <input autocomplete="off" type="tel" id="edit-postcode-" name="Postcode" value="" size="30" maxlength="128" class="form-tel">
+                                    <label for="Postcode">Postcode:*</label>
+                                    <input autocomplete="off" type="tel" id="Postcode" name="Postcode" value="" size="30" maxlength="128" class="form-tel">
                                 </div>
                                 <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
                                     <input class="webform-button--submit button button--primary js-form-submit form-submit" type="submit" id="edit-submit" name="Submit" value="Submit">

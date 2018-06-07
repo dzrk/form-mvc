@@ -2,7 +2,7 @@
 /build/
 !gradle/wrapper/gradle-wrapper.jar
 config.java
-
+application.properties
 ### STS ###
 .apt_generated
 .classpath
