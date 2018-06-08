@@ -3,6 +3,7 @@ package org.sushisushi.sushiform;
 import okhttp3.*;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.sushisushi.sushiform.models.Url;
 
 import java.io.IOException;
 
@@ -10,18 +11,16 @@ import java.io.IOException;
 public class ApiService{
     public static final MediaType JSON
             = MediaType.parse("application/json; charset=utf-8");
-    static String BASE_URL = config.getBaseUrl();
 
     public static JSONObject getApiData(String route) throws IOException, JSONException {
         OkHttpClient client = new OkHttpClient();
 
-        String auth = config.getAuth();
-        String url = "";
+        String url;
         if (route.equals("Authorisation?")){
-            url = BASE_URL +
-                    route + auth;
+            url = getBaseUrl() +
+                    route + getAuthUrl();
         }else{
-            url = BASE_URL + route;
+            url = getBaseUrl() + route;
         }
 
         Request request = new Request.Builder()
@@ -41,7 +40,7 @@ public class ApiService{
 
         OkHttpClient client = new OkHttpClient();
         String json = payload.toString();
-        String url = BASE_URL + route;
+        String url = getBaseUrl() + route;
         RequestBody body = RequestBody.create(JSON, json);
         System.out.println(payload.toString());
         Request request = new Request.Builder()
@@ -51,7 +50,14 @@ public class ApiService{
                 .build();
         Response response = client.newCall(request).execute();
         return response.code();
+    }
 
+    public static String getBaseUrl(){
+        return Url.getBase();
+    }
+
+    public static String getAuthUrl(){
+        return Url.getAuth();
     }
 
 }
